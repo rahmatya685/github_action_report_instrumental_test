@@ -1,0 +1,14 @@
+name: "Testing Flow"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  testing_flow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v2
+      - name: "Run action"
+        uses: ./
+         
